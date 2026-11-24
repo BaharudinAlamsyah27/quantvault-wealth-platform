@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { ShieldCheck } from "lucide-react";
 import { SidebarNav, type AppTheme, type InvestorTab } from "@/components/layout/SidebarNav";
 import { AdvisorDeskPanel, type AdvisorClientSummary } from "@/components/advisor/AdvisorDeskPanel";
@@ -367,7 +368,7 @@ export default function WorkspacePage() {
         {role === "investor" && (
           <>
             <div className="role-authority-banner has-media">
-              <img
+              <Image
                 src="/images/investor-wealth.jpg"
                 alt="Ilustrasi nasabah meninjau alokasi portofolio"
                 width={76}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   AlertTriangle,
@@ -229,12 +230,13 @@ export default function LandingPage() {
 
             <aside className="landing-editorial-frame">
               <div className="editorial-hero-media">
-                <img
+                <Image
                   src="/images/quant-analyst.jpg"
                   alt="Analis kuantitatif meninjau grafik optimasi portofolio di ruang riset perbankan"
                   width={640}
                   height={440}
                   className="editorial-img"
+                  priority
                 />
                 <div className="editorial-caption">
                   <span className="micro-label">DUAL-ENGINE QUANTITATIVE DESK</span>
@@ -323,7 +325,7 @@ export default function LandingPage() {
             <div className="editorial-trio-grid">
               <article className="panel editorial-story-card">
                 <div className="editorial-story-media">
-                  <img
+                  <Image
                     src="/images/investor-wealth.jpg"
                     alt="Nasabah private banking meninjau alokasi portofolio investasi secara digital"
                     width={520}
@@ -340,7 +342,7 @@ export default function LandingPage() {
 
               <article className="panel editorial-story-card">
                 <div className="editorial-story-media">
-                  <img
+                  <Image
                     src="/images/advisor-consultation.jpg"
                     alt="Relationship Manager berdiskusi dengan nasabah mengenai strategi portofolio"
                     width={520}
@@ -357,7 +359,7 @@ export default function LandingPage() {
 
               <article className="panel editorial-story-card">
                 <div className="editorial-story-media">
-                  <img
+                  <Image
                     src="/images/quant-analyst.jpg"
                     alt="Komite risiko memantau kepatuhan dan parameter pasar kuantitatif"
                     width={520}

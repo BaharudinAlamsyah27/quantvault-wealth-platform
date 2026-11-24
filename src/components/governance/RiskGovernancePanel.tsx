@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { Activity, BadgeCheck, LockKeyhole, Play, RotateCcw, ShieldCheck } from "lucide-react";
 import type { AssetClass, GovernanceAuditEntry } from "@/types/quant";
 import type { AssetOverride } from "@/lib/storage/demo-session";
@@ -49,7 +50,7 @@ export function RiskGovernancePanel(props: Props) {
   return (
     <section className="role-workspace governance-workspace">
       <div className="role-authority-banner has-media">
-        <img
+        <Image
           src="/images/quant-analyst.jpg"
           alt="Analis kuantitatif dan auditor risiko memeriksa parameter pasar"
           width={76}

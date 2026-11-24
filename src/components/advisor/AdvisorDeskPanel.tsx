@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { Check, ChevronLeft, ChevronRight, ClipboardCheck, Download, Eye, Plus, Search, Upload, UserPlus, X } from "lucide-react";
 import type { DemoPersona, PortfolioPoint } from "@/types/quant";
 import { assessRisk, RISK_QUESTIONS } from "@/data/risk-questions";
@@ -222,7 +223,7 @@ export function AdvisorDeskPanel({ clients, activePersonaId, approvedIds, onSele
   return (
     <section className="role-workspace advisor-workspace">
       <div className="role-authority-banner has-media">
-        <img
+        <Image
           src="/images/advisor-consultation.jpg"
           alt="Sesi konsultasi Wealth Advisor bersama nasabah"
           width={76}
